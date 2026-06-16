@@ -1,0 +1,6 @@
+{
+  "name": "FixoraX",
+  "description": "Premium glassmorphic e-commerce layout and design system built with Next.js, Tailwind v4, and Framer Motion.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
