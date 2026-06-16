@@ -474,7 +474,7 @@ export default function Home() {
                     <p className="text-[9px] text-neutral-400 uppercase tracking-widest mt-1">Local Dispatch</p>
                   </div>
                   <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5 text-center col-span-2">
-                    <p className="text-xs font-semibold text-neutral-300 font-sans">Certified ja-Ela Express</p>
+                    <p className="text-xs font-semibold text-neutral-300 font-sans">Certified Gampaha Express</p>
                     <p className="text-[8px] text-neutral-500 uppercase tracking-widest mt-0.5">Assurance ID: F-2026</p>
                   </div>
                 </div>
@@ -651,33 +651,33 @@ export default function Home() {
                   
                   <div>
                     <span className="inline-block px-2.5 py-0.5 rounded bg-purple-600/20 border border-purple-500/30 text-[9px] font-mono tracking-widest uppercase font-bold text-purple-300">
-                      Glass Premium VIP
+                      Premium Customer
                     </span>
-                    <h3 className="font-sans font-bold text-neutral-100 text-base mt-2">Shehan Sandaru’s Circle</h3>
-                    <p className="text-xs text-neutral-400 mt-1">Exclusivity Level: Elite Tier 4</p>
+                    <h3 className="font-sans font-bold text-neutral-100 text-base mt-2">User Profile</h3>
+                    <p className="text-xs text-neutral-400 mt-1">Status: Active Member</p>
                   </div>
 
                   <div className="pt-2 border-t border-white/6 font-mono text-[9px] text-neutral-500 text-left space-y-2">
                     <div className="flex justify-between">
-                      <span>PACKING METHOD:</span>
-                      <span className="text-neutral-300 font-bold">VIP METALLIC CRATE</span>
+                      <span>PREF. DELIVERY:</span>
+                      <span className="text-neutral-300 font-bold">STANDARD PACKAGING</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>FULFILLMENT HUB:</span>
-                      <span className="text-neutral-300 font-bold">GAMPAHA SECURE VAULT</span>
+                      <span>PRIMARY STORE:</span>
+                      <span className="text-neutral-300 font-bold">GAMPAHA MOBILE SHOP</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>SHIPPING CLAIMS:</span>
-                      <span className="text-indigo-400 font-bold">PRIORITY AIR SHIP</span>
+                      <span>WARRANTY STATUS:</span>
+                      <span className="text-indigo-400 font-bold">ACTIVE</span>
                     </div>
                   </div>
                 </GlassCard>
 
                 {/* Secure storage note */}
                 <div className="p-4 rounded-xl border border-white/6 bg-white/[0.01] text-xs space-y-2 text-neutral-400">
-                  <p className="font-bold text-neutral-200">Personal Data & Vault Trust</p>
+                  <p className="font-bold text-neutral-200">Account Security</p>
                   <p className="text-[11px] leading-relaxed">
-                    FixoraX does not lease or yield client metadata coordinates to secondary entities. Order records stand securely verified inside local Escrow.
+                    Your personal details and order history are kept strictly confidential and securely stored.
                   </p>
                 </div>
 
@@ -688,9 +688,9 @@ export default function Home() {
                 
                 <GlassCard interactive={false} className="p-6 space-y-6 bg-zinc-950/40">
                   <div className="space-y-1.5">
-                    <h2 className="text-base font-bold text-neutral-100 font-sans uppercase tracking-tight">VIP Release Dispatch</h2>
+                    <h2 className="text-base font-bold text-neutral-100 font-sans uppercase tracking-tight">Latest Offers & Updates</h2>
                     <p className="text-xs text-neutral-400 leading-relaxed font-sans">
-                      Register to secure instant dispatch notices for titanium frame runs, limited-run Gampaha micro caps, and prototype layout drops.
+                      Subscribe to receive notifications about new smartphone arrivals, exclusive discounts, and accessory restocks.
                     </p>
                   </div>
 
@@ -739,9 +739,9 @@ export default function Home() {
 
                 {/* Contact information reminder */}
                 <div className="p-6 rounded-xl border border-white/6 bg-[#0a0a0a]/30 space-y-3 font-sans">
-                  <h4 className="text-xs uppercase font-bold tracking-wider text-neutral-300 font-sans">Direct Contact Priority</h4>
+                  <h4 className="text-xs uppercase font-bold tracking-wider text-neutral-300 font-sans">Direct Contact</h4>
                   <p className="text-[11px] text-neutral-400 leading-relaxed font-sans">
-                    Experiencing layout adjustment concerns or require custom micro-machining parameters? Coordinate directly with Shehan Sandaru by phone at <span className="font-mono text-white">+94 915 2005</span> or write to the tech division at <span className="font-mono text-white font-mono">fixorax2026@gmail.com</span>.
+                    Have any questions or need support? Coordinate directly with us by phone at <span className="font-mono text-white">+94 77 123 4567</span> or write to us at <span className="font-mono text-white font-mono">support@fixorax.com</span>.
                   </p>
                 </div>
 
