@@ -117,10 +117,10 @@ export default function ProfilePage() {
         {/* Title */}
         <div className="mb-10 space-y-2">
           <h1 className="text-3xl sm:text-5xl font-sans font-extrabold tracking-tight text-white leading-none">
-            Premium Circle Workspace
+            User Profile
           </h1>
           <p className="text-xs sm:text-sm text-neutral-400 max-w-2xl">
-            Authorize custom dispatch routes, view purchase history, and track real-time mobile order status configurations.
+            Manage your delivery addresses, view purchase history, and track your mobile orders.
           </p>
         </div>
 
@@ -142,7 +142,7 @@ export default function ProfilePage() {
                   <div className="flex items-center gap-2">
                     <h2 className="text-lg font-bold text-white leading-none">{fullName || 'Oshan Jayasri'}</h2>
                     <span className="text-[8px] font-mono tracking-wider font-extrabold text-cyan-400 uppercase bg-cyan-950 px-1.5 py-0.5 border border-cyan-500/25 rounded">
-                      Apex Member
+                      Active Member
                     </span>
                   </div>
                   <p className="text-xs text-neutral-400 font-mono">oshanjayasri@gmail.com</p>

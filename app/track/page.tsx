@@ -72,10 +72,10 @@ export default function TrackLookupPage() {
             
             <div className="space-y-1">
               <h1 className="text-3xl font-sans font-extrabold tracking-tight text-white leading-none">
-                Dispatch Cargo Locator
+                Track Your Order
               </h1>
               <p className="text-xs text-neutral-400 max-w-sm mx-auto">
-                Scan your premium hardware consignment ID to inspect active packing lines, clearance processes, and live courier tracking.
+                Enter your order ID to check the real-time status of your mobile devices and accessories.
               </p>
             </div>
           </div>
@@ -135,7 +135,7 @@ export default function TrackLookupPage() {
 
             {orders.length > 2 && (
               <p className="text-[9px] text-neutral-500 text-center">
-                + Visit your <Link href="/profile" className="text-indigo-400 hover:underline">Premium Circle Ledger</Link> to view other newly initiated transaction logs.
+                + Visit your <Link href="/profile" className="text-indigo-400 hover:underline">User Profile</Link> to view other newly initiated transaction logs.
               </p>
             )}
           </div>

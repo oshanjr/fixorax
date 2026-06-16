@@ -248,33 +248,39 @@ export default function Home() {
               {/* Bento-style ambient feature callout panels */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-5xl mx-auto mt-16">
                 
-                <GlassCard interactive={false} className="p-5 flex gap-4 items-start select-text bg-[#0c0c12]/40">
-                  <div className="p-2.5 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 shrink-0">
-                    <Sliders size={18} />
-                  </div>
-                  <div className="space-y-1">
-                    <h3 className="text-xs font-bold uppercase tracking-wider text-neutral-100">Expert Repairs & Service</h3>
-                    <p className="text-[11px] leading-relaxed text-neutral-400">Get your devices fixed by our expert technicians. Screen replacements, battery upgrades, and diagnostic services.</p>
-                  </div>
-                </GlassCard>
-
-                <GlassCard interactive={false} className="p-5 flex gap-4 items-start select-text bg-[#0c0c12]/40">
-                  <div className="p-2.5 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 shrink-0">
-                    <Truck size={18} />
-                  </div>
-                  <div className="space-y-1">
-                    <h3 className="text-xs font-bold uppercase tracking-wider text-neutral-100">Gampaha Delivery Hub</h3>
-                    <p className="text-[11px] leading-relaxed text-neutral-400">Fast and secure delivery across Gampaha and surrounding areas within 24 hours.</p>
+                <GlassCard interactive={false} className="p-5 select-text bg-[#0c0c12]/40">
+                  <div className="flex flex-col items-start gap-4">
+                    <div className="p-2.5 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 shrink-0">
+                      <Sliders size={18} />
+                    </div>
+                    <div className="space-y-1">
+                      <h3 className="text-xs font-bold uppercase tracking-wider text-neutral-100">Expert Repairs & Service</h3>
+                      <p className="text-[11px] leading-relaxed text-neutral-400">Get your devices fixed by our expert technicians. Screen replacements, battery upgrades, and diagnostic services.</p>
+                    </div>
                   </div>
                 </GlassCard>
 
-                <GlassCard interactive={false} className="p-5 flex gap-4 items-start select-text bg-[#0c0c12]/40">
-                  <div className="p-2.5 rounded-xl bg-white/4 border border-white/10 text-white shrink-0">
-                    <ShieldCheck size={18} />
+                <GlassCard interactive={false} className="p-5 select-text bg-[#0c0c12]/40">
+                  <div className="flex flex-col items-start gap-4">
+                    <div className="p-2.5 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 shrink-0">
+                      <Truck size={18} />
+                    </div>
+                    <div className="space-y-1">
+                      <h3 className="text-xs font-bold uppercase tracking-wider text-neutral-100">Gampaha Delivery Hub</h3>
+                      <p className="text-[11px] leading-relaxed text-neutral-400">Fast and secure delivery across Gampaha and surrounding areas within 24 hours.</p>
+                    </div>
                   </div>
-                  <div className="space-y-1 font-sans">
-                    <h3 className="text-xs font-bold uppercase tracking-wider text-neutral-100">1-Year Warranty</h3>
-                    <p className="text-[11px] leading-relaxed text-neutral-400">Every device and accessory comes with a comprehensive warranty for your peace of mind.</p>
+                </GlassCard>
+
+                <GlassCard interactive={false} className="p-5 select-text bg-[#0c0c12]/40">
+                  <div className="flex flex-col items-start gap-4">
+                    <div className="p-2.5 rounded-xl bg-white/4 border border-white/10 text-white shrink-0">
+                      <ShieldCheck size={18} />
+                    </div>
+                    <div className="space-y-1 font-sans">
+                      <h3 className="text-xs font-bold uppercase tracking-wider text-neutral-100">1-Year Warranty</h3>
+                      <p className="text-[11px] leading-relaxed text-neutral-400">Every device and accessory comes with a comprehensive warranty for your peace of mind.</p>
+                    </div>
                   </div>
                 </GlassCard>
 
@@ -444,38 +450,36 @@ export default function Home() {
 
             {/* SPECIAL METADATA BANNER DESIGN */}
             <section className="px-6 max-w-5xl mx-auto my-24 select-none">
-             <GlassCard
+              <GlassCard
                 glow="purple"
                 interactive={false}
-                className="p-10 relative overflow-hidden bg-[#0c0c12]/60 border border-purple-500/20 shadow-xl rounded-2xl flex flex-col md:flex-row items-center justify-between gap-10"
+                className="p-10 relative overflow-hidden bg-[#0c0c12]/60 border border-purple-500/20 shadow-xl rounded-2xl"
               >
                 <div className="absolute top-0 right-0 w-80 h-80 bg-purple-600/[0.04] rounded-full blur-[100px] pointer-events-none" />
                 
-                <div className="space-y-4 max-w-lg">
-                  <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-purple-900/15 border border-purple-500/30">
-                    <Award size={12} className="text-purple-400" />
-                    <span className="text-[9px] font-bold font-mono tracking-widest uppercase text-purple-400">Premium Quality Assurance</span>
+                <div className="flex flex-col md:flex-row items-center justify-between gap-10 w-full">
+                  <div className="space-y-4 max-w-lg">
+                    <h2 className="font-sans font-extrabold text-white text-2xl sm:text-3xl leading-snug">
+                      FixoraX Mobile Hub
+                    </h2>
+                    <p className="text-xs text-neutral-400 leading-relaxed">
+                      Every order is carefully inspected and securely packaged at our Gampaha shop. We ensure your mobile devices and accessories reach you in perfect condition with express local dispatch.
+                    </p>
                   </div>
-                  <h2 className="font-sans font-extrabold text-white text-2xl sm:text-3xl leading-snug">
-                    FixoraX Mobile Hub
-                  </h2>
-                  <p className="text-xs text-neutral-400 leading-relaxed">
-                    Every order is carefully inspected and securely packaged at our Gampaha shop. We ensure your mobile devices and accessories reach you in perfect condition with express local dispatch.
-                  </p>
-                </div>
- 
-                <div className="grid grid-cols-2 gap-4 w-full md:w-auto shrink-0 font-mono">
-                  <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5 text-center">
-                    <p className="text-lg font-bold text-white tracking-tight">99.8%</p>
-                    <p className="text-[9px] text-neutral-400 uppercase tracking-widest mt-1">Quality Check</p>
-                  </div>
-                  <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5 text-center">
-                    <p className="text-lg font-bold text-indigo-400 tracking-tight">48 Hrs</p>
-                    <p className="text-[9px] text-neutral-400 uppercase tracking-widest mt-1">Local Dispatch</p>
-                  </div>
-                  <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5 text-center col-span-2">
-                    <p className="text-xs font-semibold text-neutral-300 font-sans">Certified Gampaha Express</p>
-                    <p className="text-[8px] text-neutral-500 uppercase tracking-widest mt-0.5">Assurance ID: F-2026</p>
+  
+                  <div className="grid grid-cols-2 gap-4 w-full md:w-auto shrink-0 font-mono">
+                    <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5 text-center">
+                      <p className="text-lg font-bold text-white tracking-tight">15k+</p>
+                      <p className="text-[9px] text-neutral-400 uppercase tracking-widest mt-1">Devices Fixed</p>
+                    </div>
+                    <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5 text-center">
+                      <p className="text-lg font-bold text-indigo-400 tracking-tight">100%</p>
+                      <p className="text-[9px] text-neutral-400 uppercase tracking-widest mt-1">Original Parts</p>
+                    </div>
+                    <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5 text-center col-span-2">
+                      <p className="text-xs font-semibold text-neutral-300 font-sans">Premium Mobile Accessories</p>
+                      <p className="text-[8px] text-neutral-500 uppercase tracking-widest mt-0.5">Top Brands Available</p>
+                    </div>
                   </div>
                 </div>
               </GlassCard>
