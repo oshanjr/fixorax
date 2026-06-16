@@ -27,7 +27,7 @@ export default function Footer() {
             </div>
             
             <p className="text-xs text-neutral-400 leading-relaxed">
-              Curating premium smartphones, modular chargers, high-fidelity acoustics, and bespoke space hardware for discerning creators globally.
+              Your trusted destination for premium smartphones, accessories, and mobile repairs situated in Gampaha.
             </p>
 
             <div className="pt-2">
@@ -40,7 +40,7 @@ export default function Footer() {
           {/* Section 2: Contact & Founder (Strictly Literal Coordinates) */}
           <div className="space-y-4 md:col-span-2">
             <h4 className="text-xs font-bold uppercase tracking-wider font-mono text-white">
-              Studio Headquarters
+              Store Location
             </h4>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

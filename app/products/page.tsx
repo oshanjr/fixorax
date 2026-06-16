@@ -210,14 +210,14 @@ export default function ProductCatalogPage() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/6 backdrop-blur-md">
             <Sparkles size={11} className="text-indigo-400 animate-pulse" />
             <span className="text-[9px] font-semibold font-mono tracking-widest uppercase text-neutral-300">
-              Elite Fitting & Precision Enclosures
+              Premium Mobile Devices & Accessories
             </span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-sans font-extrabold tracking-tight text-white leading-none">
-            FixoraX Vault Catalog
+            FixoraX Shop Catalog
           </h1>
           <p className="text-sm text-neutral-400 max-w-2xl leading-relaxed">
-            Sourced sound dampening kits, anodized solid metallic frames, plate alignments, and bespoke linear systems calibrated in our Ja-Ela workspace. Filter securely to finalize parameters.
+            Discover our collection of the latest smartphones, protective cases, and fast chargers. Filter to find the exact device or accessory you need.
           </p>
         </div>
 
@@ -242,7 +242,7 @@ export default function ProductCatalogPage() {
                 <span className="text-[10px] font-mono font-bold tracking-wider uppercase text-neutral-400">Keyword Lookup</span>
                 <GlassInput
                   icon={<Search size={14} className="text-neutral-500" />}
-                  placeholder="Body, keycap set, POM..."
+                  placeholder="Smartphones, cases, chargers..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="h-10 text-xs px-3"
@@ -251,7 +251,7 @@ export default function ProductCatalogPage() {
 
               {/* Categories */}
               <div className="space-y-2.5">
-                <span className="text-[10px] font-mono font-bold tracking-wider uppercase text-neutral-400 block">Mechanical Category</span>
+                <span className="text-[10px] font-mono font-bold tracking-wider uppercase text-neutral-400 block">Category</span>
                 <div className="flex flex-col gap-1">
                   {categories.map((cat) => {
                     const isSelected = selectedCategory === cat;
@@ -536,7 +536,7 @@ export default function ProductCatalogPage() {
                     </span>
                   ) : (
                     <span className="flex items-center gap-1.5 justify-center">
-                      Examine More Units <ChevronRight size={13} />
+                      View More Products <ChevronRight size={13} />
                     </span>
                   )}
                 </GlassButton>
