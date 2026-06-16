@@ -76,7 +76,7 @@ export default function ProductDetailPage({ params }: PageProps) {
           <div className="space-y-2">
             <h1 className="text-2xl font-bold text-white">Consignment Missing</h1>
             <p className="text-xs text-neutral-400 max-w-sm leading-relaxed">
-              The requested premium component block ID ({productId}) could not be located in our inventory files.
+              The requested product ID ({productId}) could not be located in our inventory.
             </p>
           </div>
           <Link href="/products">
@@ -248,7 +248,7 @@ export default function ProductDetailPage({ params }: PageProps) {
                 </span>
                 <span className="w-[1px] h-3.5 bg-white/10" />
                 <span className="text-[10px] font-mono text-indigo-300 uppercase tracking-wider flex items-center gap-1">
-                  <Atom size={12} className="animate-spin text-indigo-400" /> Shehan Approved
+                  <Atom size={12} className="animate-spin text-indigo-400" /> Quality Checked
                 </span>
               </div>
             </div>
@@ -277,7 +277,7 @@ export default function ProductDetailPage({ params }: PageProps) {
                   'bg-emerald-500/10 border border-emerald-500/10 text-emerald-400'
                 )}
               >
-                {isOutOfStock ? 'Depleted / Sold Out' : isLowStock ? `low stock - ${product.stockCount} left` : 'Available for allocation'}
+                {isOutOfStock ? 'Out of Stock' : isLowStock ? `Low Stock - ${product.stockCount} left` : 'In Stock'}
               </span>
             </div>
 
@@ -337,7 +337,7 @@ export default function ProductDetailPage({ params }: PageProps) {
               
               {/* Quantity Controls */}
               <div className="flex items-center gap-3">
-                <span className="text-xs text-neutral-400 font-mono uppercase tracking-wider">Configure weight:</span>
+                <span className="text-xs text-neutral-400 font-mono uppercase tracking-wider">Select Quantity:</span>
                 <div className="flex items-center bg-zinc-950 border border-white/10 rounded-xl p-1 shrink-0">
                   <button
                     onClick={() => setQuantity((q) => Math.max(1, q - 1))}
@@ -370,17 +370,17 @@ export default function ProductDetailPage({ params }: PageProps) {
                   {isAdding ? (
                     <span className="flex items-center gap-2">
                       <span className="w-3.5 h-3.5 rounded-full border border-t-indigo-400 border-r-transparent animate-spin inline-block" />
-                      calibrating...
+                      processing...
                     </span>
                   ) : justAdded ? (
                     <span className="flex items-center gap-1.5 text-emerald-400">
-                      <Check size={14} className="stroke-[3] animate-bounce" /> Item Allocated!
+                      <Check size={14} className="stroke-[3] animate-bounce" /> Added to Cart!
                     </span>
                   ) : isOutOfStock ? (
-                    'Consignment sold'
+                    'Out of Stock'
                   ) : (
                     <span className="flex items-center gap-1.5">
-                      <ShoppingCart size={13} /> Allocate To Vault
+                      <ShoppingCart size={13} /> Add to Cart
                     </span>
                   )}
                 </GlassButton>
@@ -390,9 +390,9 @@ export default function ProductDetailPage({ params }: PageProps) {
             {/* Secure Service Guarantee cards */}
             <div className="grid grid-cols-3 gap-3 pt-2">
               {[
-                { title: 'Gampaha Vault', desc: 'Secure Handheld Calibrations', icon: <Award size={14} className="text-indigo-400" /> },
-                { title: 'Safe Escape', desc: 'Complimentary Solid Packing', icon: <ShieldCheck size={14} className="text-purple-400" /> },
-                { title: 'Direct Dispatch', desc: 'Islandwide Tracked Courier', icon: <Truck size={14} className="text-pink-400" /> }
+                { title: 'Gampaha Shop', desc: 'Expert Tech Support', icon: <Award size={14} className="text-indigo-400" /> },
+                { title: 'Secure Packaging', desc: 'Free Safe Packaging', icon: <ShieldCheck size={14} className="text-purple-400" /> },
+                { title: 'Fast Delivery', desc: 'Islandwide Shipping', icon: <Truck size={14} className="text-pink-400" /> }
               ].map((item, idx) => (
                 <div key={idx} className="p-3 text-center rounded-xl bg-white/[0.01] border border-white/[0.04]">
                   <div className="w-7 h-7 rounded-lg bg-zinc-950/40 border border-white/5 flex items-center justify-center mx-auto mb-2 text-neutral-400">

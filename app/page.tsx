@@ -22,6 +22,7 @@ import Footer from '@/components/layout/Footer';
 import GlassCard from '@/components/glass/GlassCard';
 import GlassButton from '@/components/glass/GlassButton';
 import GlassInput from '@/components/glass/GlassInput';
+import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { useCart } from '@/context/CartContext';
 
@@ -364,7 +365,7 @@ export default function Home() {
                       className="flex flex-col h-full bg-[#0a0a0a]/30"
                     >
                       {/* Product display capsule */}
-                      <div className="relative aspect-video rounded-xl overflow-hidden bg-neutral-900 border border-white/5 shrink-0 group">
+                      <Link href={`/products/${product.id}`} className="relative aspect-video rounded-xl overflow-hidden bg-neutral-900 border border-white/5 shrink-0 group block">
                         
                         {/* Upper tag indicators */}
                         {product.badge && (
@@ -390,7 +391,7 @@ export default function Home() {
 
                         {/* Top glass highlights overlay */}
                         <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/40 via-transparent to-white/5 opacity-80 pointer-events-none" />
-                      </div>
+                      </Link>
 
                       {/* Info & Description card-body */}
                       <div className="flex-1 flex flex-col justify-between pt-5 space-y-4">
@@ -401,9 +402,11 @@ export default function Home() {
                             </span>
                           </div>
 
-                          <h3 className="font-sans font-bold text-neutral-100 text-sm truncate leading-snug">
-                            {product.name}
-                          </h3>
+                          <Link href={`/products/${product.id}`} className="block">
+                            <h3 className="font-sans font-bold text-neutral-100 text-sm truncate leading-snug hover:text-indigo-400 transition">
+                              {product.name}
+                            </h3>
+                          </Link>
                           
                           <p className="text-[11px] text-zinc-400 line-clamp-2 leading-relaxed h-8">
                             {product.description}
